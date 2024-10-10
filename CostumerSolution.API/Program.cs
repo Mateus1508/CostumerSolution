@@ -19,12 +19,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //para usar o InMemory database
-//builder.Services.AddDbContext<AppDbContext>(options =>
-//    options.UseInMemoryDatabase("CostumerDb"));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseInMemoryDatabase("CostumerDb"));
 
 //Para usar o SQL Server
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddHttpClient("ViacepClient", client =>
 {
