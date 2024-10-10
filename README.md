@@ -39,13 +39,12 @@ Certifique-se de que você possui os seguintes pré-requisitos instalados em sua
    - Abra o arquivo `appsettings.json` e configure a string de conexão conforme mostrado na seção **Conexão com o SQL Server**.
 
 4. **Executar o projeto**:
-   - Certifique-se de que o projeto está configurado como o projeto de inicialização (startup project).
+   - Certifique-se de que o projeto está configurado como o projeto de inicialização.
    - Pressione `F5` ou clique no botão **Start** na barra de ferramentas para iniciar a aplicação.
    - A API será iniciada e você verá a saída no console.
 
 5. **Acessar o Swagger**:
-   - Após iniciar o projeto, abra um navegador e acesse `https://localhost:{porta}/swagger`, onde `{porta}` é a porta que o Visual Studio alocou para o seu projeto.
-   - O Swagger irá gerar uma interface de usuário interativa onde você pode testar os endpoints da API.
+   - Após iniciar o projeto, o Swagger irá gerar uma interface de usuário interativa onde você pode testar os endpoints da API.
 
 6. **Testar a API**:
    - Use a interface do Swagger para fazer chamadas HTTP aos endpoints disponíveis, ver suas respostas e testar a funcionalidade da API.
