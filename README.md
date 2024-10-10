@@ -6,6 +6,7 @@ Este é um projeto ASP.NET Core que implementa a arquitetura Clean Architecture 
 
 - [Pré-requisitos](#pré-requisitos)
 - [Como rodar o projeto](#como-rodar-o-projeto)
+  - [Rodando no Visual Studio](#rodando-no-visual-studio)
   - [Rodando com Docker](#rodando-com-docker)
   - [Configurando o Banco de Dados](#configurando-o-banco-de-dados)
   - [Conexão com o SQL Server](#conexão-com-o-sql-server)
@@ -25,6 +26,29 @@ Certifique-se de que você possui os seguintes pré-requisitos instalados em sua
 - [Docker](https://www.docker.com/get-started) (opcional)
 
 ## Como rodar o projeto
+
+### Rodando no Visual Studio
+
+1. **Abra o projeto no Visual Studio**:
+   - Inicie o Visual Studio e abra a solução do projeto.
+
+2. **Restaurar pacotes NuGet**:
+   - Clique com o botão direito no projeto no Solution Explorer e selecione **Restore NuGet Packages** para garantir que todas as dependências estejam instaladas.
+
+3. **Configurar a string de conexão** (se estiver usando SQL Server):
+   - Abra o arquivo `appsettings.json` e configure a string de conexão conforme mostrado na seção **Conexão com o SQL Server**.
+
+4. **Executar o projeto**:
+   - Certifique-se de que o projeto está configurado como o projeto de inicialização (startup project).
+   - Pressione `F5` ou clique no botão **Start** na barra de ferramentas para iniciar a aplicação.
+   - A API será iniciada e você verá a saída no console.
+
+5. **Acessar o Swagger**:
+   - Após iniciar o projeto, abra um navegador e acesse `https://localhost:{porta}/swagger`, onde `{porta}` é a porta que o Visual Studio alocou para o seu projeto.
+   - O Swagger irá gerar uma interface de usuário interativa onde você pode testar os endpoints da API.
+
+6. **Testar a API**:
+   - Use a interface do Swagger para fazer chamadas HTTP aos endpoints disponíveis, ver suas respostas e testar a funcionalidade da API.
 
 ### Rodando com Docker
 
